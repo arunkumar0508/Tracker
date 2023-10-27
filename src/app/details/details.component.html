@@ -1,0 +1,18 @@
+<div class="details-container">
+    <h2>Details</h2>
+    <ul *ngIf="searchType === 'clinic'">
+      <li *ngFor="let clinic of data">
+        <p>Name: {{ clinic.id }}</p>
+        <p>Address: {{ clinic.hName }}</p>
+      </li>
+    </ul>
+
+    <ul *ngIf="searchType === 'doctor'">
+      <li *ngFor="let doctor of data">
+        <p>Name: {{ doctor.doctorName }}</p>
+        <p>Age: {{ doctor.age }}</p>
+        <p>Experience: {{ doctor.experience }}</p>
+        <p>Specialization: {{ doctor.specialization }}</p>
+      </li>
+    </ul>
+</div>

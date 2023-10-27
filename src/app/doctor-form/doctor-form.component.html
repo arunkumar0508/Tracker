@@ -1,0 +1,48 @@
+<div>
+    <h2>Fill the form to save Doctor Details</h2>
+  
+    <form [formGroup]="doctorForm" (ngSubmit)="onDoctorSubmit()">
+      <div class="form-field">
+        <mat-form-field appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name">
+          <mat-error *ngIf="doctorForm.get('name')?.hasError('required')">Name is required</mat-error>
+        </mat-form-field>
+      </div>
+  
+      <div class="form-field">
+        <mat-form-field appearance="fill">
+          <mat-label>Age</mat-label>
+          <input matInput formControlName="age">
+        </mat-form-field>
+      </div>
+  
+      <div class="form-field">
+        <mat-form-field appearance="fill">
+          <mat-label>Specialization</mat-label>
+          <input matInput formControlName="specialization">
+        </mat-form-field>
+      </div>
+  
+      <div class="form-field">
+        <mat-form-field appearance="fill">
+          <mat-label>Experience (in years)</mat-label>
+          <input matInput formControlName="experience">
+        </mat-form-field>
+      </div>
+  
+
+      <div class="form-field">
+        <mat-form-field appearance="fill">
+          <mat-label>Hospital</mat-label>
+          <mat-select formControlName="hospital">
+            <mat-option *ngFor="let hospital of hospitals" [value]="hospital">{{ hospital }}</mat-option>
+          </mat-select>
+          <mat-error *ngIf="doctorForm.get('hName')?.hasError('required')">Hospital is required</mat-error>
+        </mat-form-field>
+      </div>
+      
+      <button mat-raised-button color="primary" type="submit">Submit</button>
+    </form>
+  </div>
+    

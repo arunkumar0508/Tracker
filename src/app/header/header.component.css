@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkcyan;
+    height: 100px;
+  }
+  a{
+    text-decoration: none;
+  }
+  .home{
+    position: absolute;
+    top:35px;
+    left: 25px;
+    color: azure;
+  }
+  
+ 
+  

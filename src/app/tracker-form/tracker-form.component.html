@@ -1,0 +1,24 @@
+<div>
+    <h2>Fill the form to save Clinic Details</h2>
+  
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+      <div class="form-field">
+        <mat-form-field appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="hName">
+          <mat-error *ngIf="myForm?.get('hName')?.hasError('required')">Name is required</mat-error>
+        </mat-form-field>
+      </div>
+  
+      <div class="form-field">
+        <mat-form-field appearance="fill">
+          <mat-label>Address</mat-label>
+          <textarea matInput formControlName="address"></textarea>
+          <mat-error *ngIf="myForm?.get('address')?.hasError('required')">Address is required</mat-error>
+        </mat-form-field>
+      </div>
+  
+      <button mat-raised-button color="primary" type="submit">Submit</button>
+    </form>
+  </div>
+  
