@@ -13,7 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { TrackerFormComponent } from './tracker-form/tracker-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DoctorFormComponent } from './doctor-form/doctor-form.component';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { MatSelectModule } from '@angular/material/select';
 import { DetailsComponent } from './details/details.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
