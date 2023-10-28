@@ -16,6 +16,8 @@ import { DoctorFormComponent } from './doctor-form/doctor-form.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MatSelectModule } from '@angular/material/select';
 import { DetailsComponent } from './details/details.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 
 
 
@@ -41,7 +43,8 @@ import { DetailsComponent } from './details/details.component';
     MatIconModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
